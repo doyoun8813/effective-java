@@ -9,7 +9,7 @@ public class RunTests {
 		
 		int tests = 0;
 		int passed = 0;
-		Class<?> testClass = Class.forName("item39.Sample2");
+		Class<?> testClass = Class.forName("item39.Sample");
 		for (Method m : testClass.getDeclaredMethods()) {
 			if(m.isAnnotationPresent(Test.class)) {
 				tests++;
