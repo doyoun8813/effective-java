@@ -1,6 +1,5 @@
 package item39;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class RunTests {
@@ -16,17 +15,21 @@ public class RunTests {
 				try {
 					m.invoke(null);
 					System.out.printf("테스트 %s 실패: 예외를 던지지 않음%n", m);
-				} catch (InvocationTargetException wrappedExc) {
+				} catch (Throwable wrappedExc) {
 					Throwable exc = wrappedExc.getCause();
-					Class<? extends Throwable> excType = 
+					int oldPassed = passed;
+					Class<? extends Throwable>[] excTypes = 
 							m.getAnnotation(ExceptionTest.class).value();
-					if(excType.isInstance(exc)) {
-						passed++;
-					}else {
-						System.out.printf("테스트 %s 실패: 기대한 예외 %s,\n 발생한 예외 %s%n", m, excType.getName(), exc);					
+					for (Class<? extends Throwable> excType : excTypes) {
+						if(excType.isInstance(exc)) {
+							passed++;
+							break;
+						}
 					}
-				} catch (Exception exc) {
-					System.out.println("잘못 사용한 @ExceptionTest: " + m);
+					if (passed == oldPassed) {
+						System.out.printf("테스트 %s 실패: %s %n ", m, exc);
+					}
+					
 				}
 			}
 		}

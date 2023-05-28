@@ -1,5 +1,8 @@
 package item39;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Sample2 {
 	
 	@ExceptionTest(ArithmeticException.class)
@@ -16,5 +19,13 @@ public class Sample2 {
 	
 	@ExceptionTest(ArithmeticException.class)
 	public static void m3() {}
+	
+	@ExceptionTest({ IndexOutOfBoundsException.class, 
+		NullPointerException.class })
+	public static void doublyBad() {
+		List<String> list = new ArrayList<>();
+		// IndexOutOfBoundsException이나 NullPointerException을 던질 수 있다.
+		list.addAll(5, null);
+	}
 
 }
