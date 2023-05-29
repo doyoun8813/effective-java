@@ -3,6 +3,14 @@ package item28;
 import java.util.Vector;
 
 public class SafeVarargsTest {
+	public static final int ORANGE = 0;
+	public static final int APPLE = 0;
+	
+	public static void orange(int orange) {
+		if(SafeVarargsTest.ORANGE== orange) {
+			System.out.println("orange");
+		}
+	}
 
 	// 컬렉션을 사용한 가변인자 테스트 메서드
 	public static void collectionArgs(Vector v) {
@@ -26,6 +34,8 @@ public class SafeVarargsTest {
 	}	
 	
 	public static void main(String[] args) {
+		
+		orange(SafeVarargsTest.APPLE);
 		
 		Vector v = new Vector();
 		v.add("Hello");
