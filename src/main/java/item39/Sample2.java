@@ -20,8 +20,8 @@ public class Sample2 {
 	@ExceptionTest(ArithmeticException.class)
 	public static void m3() {}
 	
-	@ExceptionTest({ IndexOutOfBoundsException.class, 
-		NullPointerException.class })
+	@ExceptionTest(IndexOutOfBoundsException.class)
+	@ExceptionTest(NullPointerException.class)
 	public static void doublyBad() {
 		List<String> list = new ArrayList<>();
 		// IndexOutOfBoundsException이나 NullPointerException을 던질 수 있다.
