@@ -5,10 +5,10 @@ import java.util.List;
 public class SafeArgsExample{
 	
 	static void notSafe(List<String>... strLists) {
-		Object[] array = strLists; // List<String>... => List[], ¹è¿­Àº °øº¯
+		Object[] array = strLists; // List<String>... => List[], ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		List<Integer> tmpList = List.of(42);
-		array[0] = tmpList; // Object ¹è¿­¿¡ ¼ýÀÚ°¡ ´ã±ä ¸®½ºÆ®¸¦ ³Ö¾ú´Âµ¥
-		String s = strLists[0].get(0); // StringÀ¸·Î Ä³½ºÆÃ µÇÁö ¾Ê´Â´Ù. ¿À·ù!
+		array[0] = tmpList; // Object ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½Âµï¿½
+		String s = strLists[0].get(0); // Stringï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½. ï¿½ï¿½ï¿½ï¿½!
 	}
 	
 	@SafeVarargs
@@ -19,8 +19,8 @@ public class SafeArgsExample{
 	}
 	
 	public static void main(String[] args) {
-		Fruit.safe("a", "b", "c");
-		Fruit.notSafe(List.of("a", "b", "c"));
+//		Fruit.safe("a", "b", "c");
+//		Fruit.notSafe(List.of("a", "b", "c"));
 	}
 
 }

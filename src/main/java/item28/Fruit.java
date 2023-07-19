@@ -54,15 +54,15 @@ public class Fruit implements Eatable{
 		FruitBox<Fruit> fruitBox = new FruitBox<>();
 		FruitBox<Apple> appleBox = new FruitBox<>();
 		FruitBox<Grape> grapeBox = new FruitBox<>();
-		//FruitBox<Grape> grapeBox2 = new FruitBox<Apple>(); // ¿¡·¯ Å¸ÀÔ ºÒÀÏÄ¡
-		//FruitBox<Toy> toyBox = new FruitBox<>(); // ¿¡·¯ Toy´Â FruitÀÇ ÀÚ¼ÕÀÌ ¾Æ´Ô
+		//FruitBox<Grape> grapeBox2 = new FruitBox<Apple>(); // ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡
+		//FruitBox<Toy> toyBox = new FruitBox<>(); // ï¿½ï¿½ï¿½ï¿½ Toyï¿½ï¿½ Fruitï¿½ï¿½ ï¿½Ú¼ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½
 		
 		fruitBox.add(new Fruit());
 		fruitBox.add(new Apple());
 		fruitBox.add(new Grape());
 		//toyBox.add(new Toy());
 		appleBox.add(new Apple());
-		//appleBox.add(new Grape()); // ¿¡·¯ Grape´Â AppleÀÇ ÀÚ¼ÕÀÌ ¾Æ´Ô
+		//appleBox.add(new Grape()); // ï¿½ï¿½ï¿½ï¿½ Grapeï¿½ï¿½ Appleï¿½ï¿½ ï¿½Ú¼ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½
 		grapeBox.add(new Grape());
 		
 		System.out.println("fruitBox-"+fruitBox);
@@ -70,12 +70,12 @@ public class Fruit implements Eatable{
 		System.out.println("grapeBox-"+grapeBox);
 		
 		
-		ArrayList<Apple> list = new ArrayList<Apple>(); // OK. Á¦³×¸¯ Å¸ÀÔ ÀÏÄ¡
-		List<Apple> list2 = new ArrayList<Apple>(); // OK. ´ÙÇü¼º. Á¦³×¸¯ Å¸ÀÔ ÀÏÄ¡
+		ArrayList<Apple> list = new ArrayList<Apple>(); // OK. ï¿½ï¿½ï¿½×¸ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½Ä¡
+		List<Apple> list2 = new ArrayList<Apple>(); // OK. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½×¸ï¿½ Å¸ï¿½ï¿½ ï¿½ï¿½Ä¡
 		
-		ArrayList<Fruit> list3 = new ArrayList<Apple>();
+//		ArrayList<Fruit> list3 = new ArrayList<Apple>();
 		
-		// Á¦³×¸¯ Å¸ÀÔÀÌ '? extends Fruit'ÀÌ¸é, Fruit¿Í FruitÀÇ ¸ðµç ÀÚ¼Õ OK
+		// ï¿½ï¿½ï¿½×¸ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ '? extends Fruit'ï¿½Ì¸ï¿½, Fruitï¿½ï¿½ Fruitï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ú¼ï¿½ OK
 		ArrayList<? extends Fruit> list4 = new ArrayList<Apple>();
 		ArrayList<? extends Fruit> list5 = new ArrayList<Grape>();
 		

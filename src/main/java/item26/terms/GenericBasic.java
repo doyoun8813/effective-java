@@ -7,7 +7,7 @@ import java.util.List;
 public class GenericBasic {
 	
 	public static void main(String[] args) {
-		//Generic »ç¿ë Àü
+		//Generic ï¿½ï¿½ï¿½ ï¿½ï¿½
 //		List numbers = new ArrayList();
 //		numbers.add(10);
 //		numbers.add("whiteship");
@@ -16,10 +16,10 @@ public class GenericBasic {
 //			System.out.println((Integer) number);
 //		}	
 		
-		//Generic »ç¿ë ÈÄ
+		//Generic ï¿½ï¿½ï¿½ ï¿½ï¿½
 		List<Integer> numbers = new ArrayList<>();
 		numbers.add(10);
-		numbers.add("whiteship");
+//		numbers.add("whiteship");
 		
 		for (Integer number : numbers) {
 			System.out.println(number);

@@ -7,8 +7,8 @@ public class Raw {
 	
 	public static void main(String[] args) {
 		List<String> strings = new ArrayList<>();
-		unsafeAdd(strings, Integer.valueOf(42));
-		String s = strings.get(0); // ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î Çüº¯È¯ ÄÚµå¸¦ ³Ö¾îÁØ´Ù.
+//		unsafeAdd(strings, Integer.valueOf(42));
+		String s = strings.get(0); // ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È¯ ï¿½Úµå¸¦ ï¿½Ö¾ï¿½ï¿½Ø´ï¿½.
 	}
 	
 	private static void unsafeAdd(List<Object> list, Object o) {

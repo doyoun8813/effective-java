@@ -22,6 +22,6 @@ public enum Ensemble2 {
 		
 		System.out.println(str.getClass());
 		
-		str = 3;
+//		str = 3;
 	}
 }

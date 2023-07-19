@@ -21,7 +21,7 @@ public class Numbers {
 		ArrayList<Integer> set = new ArrayList<>();  
 		
 		ArrayList<?> mySet = set;
-		mySet.add(10);
+//		mySet.add(10);
 		
 		System.out.println(Numbers.numElementsInCommon(Set.of(1,2,3), Set.of(1,2)));
 	}

@@ -8,7 +8,7 @@ public class SubSubClass extends SubClass {
 	public static void main(String[] args) {
 		SubSubClass sub = new SubSubClass();
 		
-		sub.hi();
+//		sub.hi();
 		
 	}
 

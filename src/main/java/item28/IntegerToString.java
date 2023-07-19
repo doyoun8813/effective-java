@@ -6,21 +6,21 @@ import java.util.List;
 public class IntegerToString {
 
 	public static void main(String[] args) {
-		// °øº¯
+		// ï¿½ï¿½ï¿½ï¿½
 		//Object[] anything = new String[10];
 		//anything[0] = 1;
 		
-		// ºÒ°øº¯
+		// ï¿½Ò°ï¿½ï¿½ï¿½
 		//List<String> names = new ArrayList<>();
 		//List<Object> objects = names;
 		
-		// Á¦³×¸¯°ú ¹è¿­À» °°ÀÌ »ç¿ëÇÒ ¼ö ÀÖ´Ù¸é...
-		List<String>[] stringLists = new ArrayList<String>[1];
-		List<Integer> intList = List.of(42);
-		Object[] objects = stringLists;
-		objects[0] = intList;
-		String s = stringLists[0].get(0);
-		System.out.println(s);
+		// ï¿½ï¿½ï¿½×¸ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½...
+//		List<String>[] stringLists = new ArrayList<String>[1];
+//		List<Integer> intList = List.of(42);
+//		Object[] objects = stringLists;
+//		objects[0] = intList;
+//		String s = stringLists[0].get(0);
+//		System.out.println(s);
 	}
 
 }

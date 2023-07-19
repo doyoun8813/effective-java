@@ -26,7 +26,7 @@ public enum Operation5 {
 
 	    Operation5(String symbol) {
 	    	this.symbol = symbol;
-	    	System.out.println(a.get(symbol));
+//	    	System.out.println(a.get(symbol));
 	    	}
 	    
 
@@ -41,7 +41,7 @@ public enum Operation5 {
 	    private static final Map<String, String> a = new HashMap<String, String>();	
 	    
 	    
-	    // ÁöÁ¤ÇÑ ¹®ÀÚ¿­¿¡ ÇØ´çÇÏ´Â OperationÀ» (Á¸ÀçÇÑ´Ù¸é) ¹ÝÈ¯ÇÑ´Ù.
+	    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ Operationï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´Ù¸ï¿½) ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
 	    public static Optional<Operation5> fromString(String symbol) {
 	    	System.out.println("!!!!!!!!!!!!!!!!!!!!");
 	        return Optional.ofNullable(stringToEnum.get(symbol));

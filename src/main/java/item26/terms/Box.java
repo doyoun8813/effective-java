@@ -16,7 +16,7 @@ public class Box<E> {
 	
 	public static void main(String[] args) {
 		Box<? extends Number> box = new Box<>();
-		box.add(10);
+//		box.add(10);
 		printBox(box);
 	}
 	

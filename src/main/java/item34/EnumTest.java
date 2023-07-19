@@ -15,7 +15,7 @@ public class EnumTest {
 	}
 	
 	public static void main(String[] args) {
-		orangeJuice(Apple.FUJI);
+//		orangeJuice(Apple.FUJI);
 	}
 
 }
